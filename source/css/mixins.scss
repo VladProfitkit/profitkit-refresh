@@ -9,7 +9,7 @@
   list-style: none;
 }
 
-@mixin d-flex ($wrap: nowrap, $direction: row, $justify: flex-start, $align: center) {
+@mixin dflex ($wrap: nowrap, $direction: row, $justify: flex-start, $align: center) {
   display: flex;
   flex-wrap: $wrap;
   flex-direction: $direction;
@@ -28,4 +28,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin abs-center-y {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin transition ($prop: all) {
+  transition: $prop .2s linear;
 }

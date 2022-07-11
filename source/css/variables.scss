@@ -1,4 +1,12 @@
-$big-phone-width: 576px;
-$tablet-width: 768px;
-$laptop-width: 1100px;
-$desktop-width: 1280px;
+$big-phone-width: 575px;
+$tablet-width: 767px;
+$laptop-width: 1099px;
+$desktop-width: 1299px;
+
+$white-link-hover: #FFC80A;
+$pale-link-color: #8D8D8D;
+$pale-link-hover: #fff;
+
+$gradient-block-gradient: linear-gradient(90deg, #142429 0%, #0D2221 100%);
+$target-btn-gradient: linear-gradient(180deg, #FFC80A 0%, #E99400 100%);
+$target-btn-gradient-hover: linear-gradient(180deg, #FAA500 0%, #D56600 100%), linear-gradient(180deg, #FFC80A 0%, #E99400 100%);

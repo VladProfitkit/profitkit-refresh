@@ -15,9 +15,14 @@ var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/css/style.scss")
-    .pipe(plumber())
+    .pipe(plumber({
+      onError: function (err) {
+         console.log(err);
+         this.emit("end");
+     }}
+    ))
     .pipe(sourcemap.init())
-    //.pipe(sass({includePaths: require("node-normalize-scss").includePaths}))
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))

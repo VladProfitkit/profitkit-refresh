@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Arno Pro";
+  src: local("Arno Pro"),
+       local("Arno Pro Regular"),
+       url("../fonts/arnopro_caption.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arno Pro";
+  src: local("Arno Pro Bold"),
+       url("../fonts/arnopro_bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arno Pro Display";
+  src: local("Arno Pro Display Bold"),
+       url("../fonts/fonts/arnopro_bolddisplay.otf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
