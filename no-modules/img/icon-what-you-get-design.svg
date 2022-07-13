@@ -1,0 +1,17 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="47.5273" y="22.1689" width="6.55078" height="16.231" fill="#FFC80A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.7183 13.0713L55.0382 18.3787V42.7199C55.0382 42.7199 55.0382 42.72 55.0382 42.72C55.0386 45.0742 53.0725 47.04 50.7183 47.04C48.364 47.04 46.3984 45.0739 46.3984 42.72V18.3787L50.7183 13.0713ZM48.3184 19.0614V42.72C48.3184 44.0136 49.4245 45.12 50.7183 45.12C52.0123 45.12 53.1185 44.0136 53.1182 42.7202V19.0614L50.7183 16.1128L48.3184 19.0614Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M54.0796 39.3599H47.3594V37.4399H54.0796V39.3599Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M54.0796 23.0402H47.3594V21.1201H54.0796V23.0402Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.761 2.87996C12.1791 2.87996 10.8809 4.17815 10.8809 5.76006V42.2401C10.8809 43.822 12.1791 45.1202 13.761 45.1202H39.6814C41.2629 45.1202 42.5612 43.822 42.5612 42.2401V5.76006C42.5612 4.17815 41.263 2.87996 39.6811 2.87996H13.761ZM8.96094 5.76006C8.96094 3.11777 11.1187 0.959961 13.761 0.959961H39.6811C42.3234 0.959961 44.4812 3.11777 44.4812 5.76006V42.2401C44.4812 44.8823 42.3234 47.0402 39.6814 47.0402H13.761C11.1187 47.0402 8.96094 44.8824 8.96094 42.2401V5.76006Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.92188 6.72021H43.5219V8.64021H9.92188V6.72021Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.92188 37.4399H43.5219V39.3599H9.92188V37.4399Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31.5219 43.2003H21.9219V41.2803H31.5219V43.2003Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.1613 5.75984H21.4414V3.83984H28.1613V5.75984Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31.998 5.75984H30.0781V3.83984H31.998V5.75984Z" fill="black"/>
+<circle cx="17.1055" cy="14.8374" r="2.375" fill="#FFC80A" stroke="black" stroke-width="2"/>
+<circle cx="17.1055" cy="23.5054" r="2.375" fill="#FFC80A" stroke="black" stroke-width="2"/>
+<circle cx="26.7344" cy="14.8374" r="2.375" fill="#FFC80A" stroke="black" stroke-width="2"/>
+<circle cx="26.7344" cy="23.5054" r="2.375" fill="#FFC80A" stroke="black" stroke-width="2"/>
+<circle cx="36.3633" cy="14.8374" r="2.375" fill="#FFC80A" stroke="black" stroke-width="2"/>
+</svg>

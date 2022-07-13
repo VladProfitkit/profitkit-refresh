@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     const closeMobileMenu = function() {
         mobileMenu.removeClass('open');
-        body.css('overflow', false);
+        body.css('overflow', 'visible');
     }
 
     mobileMenuOpenBtn.on('click', function() {
@@ -29,4 +29,20 @@ $(document).ready(function() {
             }
         }
     });
+});
+
+$(window).on('load resize', function() {
+    let bannerZoneDescription = $('.banner-zone__description--service');
+
+    if ($(window).width() <= 767) {
+        bannerZoneDescription.readmore({
+          speed: 200,
+          collapsedHeight: 50,
+          heightMargin: 10,
+          moreLink: '<a class="banner-zone__description-expand closed" href="javascipt:;">Читать полностью</a>',
+          lessLink: '<a class="banner-zone__description-expand open" href="javascipt:;">Свернуть</a>',
+        });
+    } else {
+        bannerZoneDescription.readmore('destroy');
+    }
 });
