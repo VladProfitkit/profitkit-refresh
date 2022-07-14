@@ -323,45 +323,206 @@
 
         <div class="portfolio-slider__slider-block portfolio">
           <div class="portfolio__nav">
-            <button class="portfolio__nav-btn portfolio__nav-btn--prev"></button>
+            <button class="portfolio__nav-btn portfolio__nav-btn--prev nav-btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="#000"/>
+              </svg>
+            </button>
             <p class="portfolio__nav-counter">
               <span class="portfolio__nav-counter-current">0</span> / <span class="portfolio__nav-counter-total">0</span>
             </p>
-            <button class="portfolio__nav-btn portfolio__nav-btn--next"></button>
+            <button class="portfolio__nav-btn portfolio__nav-btn--next nav-btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+              </svg>
+            </button>
           </div>
+
           <div class="portfolio__slides">
             <div class="portfolio__slide" style="background-image: url(./img/bg-portfolio-slide-1.png)">
+              <img class="portfolio__slide-img" src="./img/img-portfolio-slide-1.png" data-desktop-src="./img/img-portfolio-slide-1.png" data-mobile-src="./img/img-portfolio-slide-mobile-1.png" alt="Поставщик продуктов в магазины и госучреждения" width="344" height="580">
+
               <div class="portfolio__slide-head">
                 <img class="portfolio__slide-logo" src="./img/logo-portfolio-slide-1.png" alt="Поставщик продуктов в магазины и госучреждения" width="137" height="71">
                 <h3 class="portfolio__slide-heading">Поставщик продуктов в магазины и госучреждения</h3>
               </div>
 
+              <div class="portfolio__inner-content">
+                <h3 class="portfolio__inner-heading">Что мы сделали</h3>
 
+                <ul class="portfolio__we-did-list">
+                  <li class="portfolio__we-did-item">
+                    <p>Разработали платформу со сложным функционалом</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Интегрировали 1С</p>
+                  </li>
+                </ul>
+
+                <h3 class="portfolio__inner-heading">Результат</h3>
+
+                <p class="portfolio__result-text">
+                  Разработан оптовый торговый портал на лицензии Битрикс «Бизнес». Проведена нестандартная интеграция с системой учета 1С
+                </p>
+              </div>
+
+              <a class="portfolio__detail-btn" href="javascipt:;">
+                <span class="portfolio__detail-btn-text">Подробнее</span>
+                <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
+                </svg>
+                <svg class="portfolio__detail-btn-arrow-mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+                </svg>
+              </a>
             </div>
+
             <div class="portfolio__slide portfolio__slide--white-text" style="background-image: url(./img/bg-portfolio-slide-2.png)">
+              <img class="portfolio__slide-img" src="./img/img-portfolio-slide-2.png" data-desktop-src="./img/img-portfolio-slide-2.png" data-mobile-src="./img/img-portfolio-slide-mobile-2.png" alt="Маркетинговое агентство по организации мероприятий" width="344" height="580">
+
               <div class="portfolio__slide-head">
                 <img class="portfolio__slide-logo" src="./img/logo-portfolio-slide-2.png" alt="Маркетинговое агентство по организации мероприятий" width="137" height="71">
                 <h3 class="portfolio__slide-heading">Маркетинговое агентство по организации мероприятий</h3>
               </div>
 
+              <div class="portfolio__inner-content">
+                <h3 class="portfolio__inner-heading">Что мы сделали</h3>
 
+                <ul class="portfolio__we-did-list">
+                  <li class="portfolio__we-did-item">
+                    <p>Интегрировали CRM для сотрудников</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Дизайн посадочной страницы</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Разработали интерфейса калькулятора</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Верстку и программирование</p>
+                  </li>
+                </ul>
+
+                <h3 class="portfolio__inner-heading">Результат</h3>
+
+                <p class="portfolio__result-text">
+                  Была реализована платформа, помогающая быстро организовать комплексные мероприятия в простой интерактивной форме
+                </p>
+              </div>
+
+              <a class="portfolio__detail-btn" href="javascipt:;">
+                <span class="portfolio__detail-btn-text">Подробнее</span>
+                <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
+                </svg>
+                <svg class="portfolio__detail-btn-arrow-mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+                </svg>
+              </a>
             </div>
+
             <div class="portfolio__slide" style="background-image: url(./img/bg-portfolio-slide-3.png)">
+              <img class="portfolio__slide-img" src="./img/img-portfolio-slide-3.png" data-desktop-src="./img/img-portfolio-slide-3.png" data-mobile-src="./img/img-portfolio-slide-mobile-3.png" alt="Сеть интернет-магазинов одежды премиум класса" width="344" height="580">
+
               <div class="portfolio__slide-head">
                 <img class="portfolio__slide-logo" src="./img/logo-portfolio-slide-3.png" alt="Сеть интернет-магазинов одежды премиум класса" width="137" height="71">
                 <h3 class="portfolio__slide-heading">Сеть интернет-магазинов одежды премиум класса</h3>
               </div>
 
+              <div class="portfolio__inner-content">
+                <h3 class="portfolio__inner-heading">Что мы сделали</h3>
 
+                <ul class="portfolio__we-did-list">
+                  <li class="portfolio__we-did-item">
+                    <p>Дизайн интернет-магазина</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Интегрировали 1С и Яндекс.Маркет</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Перенесли контент на сайт</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Обновили рекламные кампании</p>
+                  </li>
+                </ul>
+
+                <h3 class="portfolio__inner-heading">Результат</h3>
+
+                <p class="portfolio__result-text">
+                  Выработана схема взаимодействия, комфортная для заказчика
+                </p>
+              </div>
+
+              <a class="portfolio__detail-btn" href="javascipt:;">
+                <span class="portfolio__detail-btn-text">Подробнее</span>
+                <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
+                </svg>
+                <svg class="portfolio__detail-btn-arrow-mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+                </svg>
+              </a>
             </div>
+
             <div class="portfolio__slide portfolio__slide--white-text" style="background-image: url(./img/bg-portfolio-slide-4.png)">
+              <img class="portfolio__slide-img" src="./img/img-portfolio-slide-4.png" data-desktop-src="./img/img-portfolio-slide-4.png" data-mobile-src="./img/img-portfolio-slide-mobile-4.png" alt="Сервис проката автомобилей" width="344" height="580">
+
               <div class="portfolio__slide-head">
                 <img class="portfolio__slide-logo" src="./img/logo-portfolio-slide-4.png" alt="Сервис проката автомобилей" width="137" height="71">
                 <h3 class="portfolio__slide-heading">Сервис проката автомобилей</h3>
               </div>
 
+              <div class="portfolio__inner-content">
+                <h3 class="portfolio__inner-heading">Что мы сделали</h3>
 
+                <ul class="portfolio__we-did-list">
+                  <li class="portfolio__we-did-item">
+                    <p>Дизайн сайта</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Разработали новую форму заявки</p>
+                  </li>
+                  <li class="portfolio__we-did-item">
+                    <p>Верстку и программирование</p>
+                  </li>
+                </ul>
+
+                <h3 class="portfolio__inner-heading">Результат</h3>
+
+                <p class="portfolio__result-text">
+                  У сайта появился новый дизайн с приоритетом на мобильную версию. Оформление заявки на аренду автомобиля было упрощено и ускорено на 7 минут.
+                </p>
+              </div>
+
+              <a class="portfolio__detail-btn" href="javascipt:;">
+                <span class="portfolio__detail-btn-text">Подробнее</span>
+                <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
+                </svg>
+                <svg class="portfolio__detail-btn-arrow-mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+                </svg>
+              </a>
             </div>
+          </div>
+
+          <div class="portfolio__form-block portfolio-form">
+            <h2>Хотите решить задачи бизнеса и получить такой же качественный результат? Давайте обсудим ваш проект!</h2>
+
+            <form class="portfolio-form__form" action="#" method="post">
+              <div class="portfolio-form__form-fields">
+                <input class="portfolio-form__form-input text-input" type="text" name="NAME" value="" placeholder="Ваше имя">
+                <input class="portfolio-form__form-input text-input" type="text" name="PHONE" value="" placeholder="Телефон">
+                <button class="portfolio-form__form-input portfolio-form__form-input--submit target-btn" type="submit">
+                  <span>Отправить</span>
+                </button>
+              </div>
+
+              <p class="portfolio-form__form-agreement">
+                Нажимая на кнопку «Отправить», я даю <a href="#" target="_blank">согласие на обработку персональных данных (152-ФЗ)</a>
+              </p>
+            </form>
           </div>
         </div>
     </section>
