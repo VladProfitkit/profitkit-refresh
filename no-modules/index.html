@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/fancybox.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Profitkit Refresh</title>
 </head>
@@ -316,9 +317,9 @@
 
     <section class="new-section portfolio-slider gradient-block" id="portfolio">
       <div class="new-container">
-        <div class="portfolio-slider__head">
+        <div class="portfolio-slider__head new-section__head">
           <h2>Разрабатываем сайты, которые решают задачи бизнеса</h2>
-          <a class="portfolio-slider__head-link non-target-btn" href="#">Все кейсы</a>
+          <a class="portfolio-slider__head-link new-section__head-link non-target-btn" href="#">Все кейсы</a>
         </div>
 
         <div class="portfolio-slider__slider-block portfolio">
@@ -526,6 +527,246 @@
           </div>
         </div>
     </section>
+
+    <section class="new-section reviews-slider" id="reviews">
+      <div class="new-container">
+        <div class="reviews-slider__head new-section__head">
+          <h2>О нас говорят клиенты</h2>
+          <a class="reviews-slider__head-link new-section__head-link non-target-btn" href="#">Все отзывы</a>
+        </div>
+
+        <p class="reviews-slider__description">
+          Описывающий текст Был проведен анализ конверсии и юзабилити сайта. Выявлены слабые моменты текущего интерфейса сайта, провели работы по его улучшению.
+        </p>
+
+        <div class="reviews-slider__slider clients-reviews">
+          <div class="clients-reviews__slider-arrows">
+            <button class="clients-reviews__nav-btn clients-reviews__nav-btn--prev nav-btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="#000"></path>
+              </svg>
+            </button>
+
+            <button class="clients-reviews__nav-btn clients-reviews__nav-btn--next nav-btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="clients-reviews__slider-wrapper">
+            <div class="clients-reviews__slider">
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 1">
+              </a>
+
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 2">
+              </a>
+
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 3">
+              </a>
+
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 4">
+              </a>
+
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 5">
+              </a>
+
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 6">
+              </a>
+
+              <a class="clients-reviews__item" data-fancybox="reviews" data-src="./img/img-reviews-slide-big.png">
+                <img class="clients-reviews__img" src="./img/img-reviews-slide.png" alt="Отзыв 7">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="clients-reviews__slider-dots"></div>
+      </div>
+    </section>
+
+    <section class="new-section development-form-block gradient-block">
+      <div class="new-container">
+        <div class="development-form-block__head">
+          <p class="development-form-block__head-text">
+            Метод пошаговой детализации позволяет нам реализовывать проекты по минимальной стоимости
+          </p>
+
+          <p class="development-form-block__head-counter">
+            <span class="development-form-block__head-counter-text">Обращений сегодня</span>
+            <span class="development-form-block__head-counter-num">13</span>
+          </p>
+        </div>
+
+        <div class="development-form-block__body">
+          <h2>Разработка продающего&nbsp;сайта<br> от 50 000 рублей</h2>
+
+          <form class="development-form-block__form portfolio-form__form" action="#" method="post">
+            <div class="portfolio-form__form-fields">
+              <input class="portfolio-form__form-input text-input" type="text" name="NAME" value="" placeholder="Ваше имя">
+              <input class="portfolio-form__form-input text-input" type="text" name="PHONE" value="" placeholder="Телефон">
+              <button class="portfolio-form__form-input portfolio-form__form-input--submit target-btn" type="submit">
+                <span>Отправить</span>
+              </button>
+            </div>
+
+            <p class="portfolio-form__form-agreement">
+              Нажимая на кнопку «Отправить», я даю <a href="#" target="_blank">согласие на обработку персональных данных (152-ФЗ)</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-section choose-site" id="howToChoose">
+      <div class="new-container">
+        <h2>Выберите, насколько уникальным будет ваш сайт</h2>
+
+        <div class="choose-site__list">
+          <div class="choose-site__item">
+            <div class="choose-site__item-head">
+              <h3 class="choose-site__item-title">Бюджетный</h3>
+            </div>
+
+            <div class="choose-site__item-body">
+              <p class="choose-site__item-description">
+                Одностраничный сайт, собранный из готовых блоков
+              </p>
+
+              <ul class="choose-site__item-features">
+                <li class="choose-site__item-feature">
+                  <p>
+                    Изменяем тестовое наполнение в готовых блоках
+                  </p>
+                </li>
+              </ul>
+
+              <span class="choose-site__item-price">
+                от 25&nbsp;000&nbsp;₽
+              </span>
+
+              <a class="choose-site__item-button non-target-btn" href="javascript:;">Узнать цену</a>
+            </div>
+          </div>
+          <div class="choose-site__item choose-site__item--accent">
+            <div class="choose-site__item-head">
+              <h3 class="choose-site__item-title">На шаблоне</h3>
+            </div>
+
+            <div class="choose-site__item-body">
+              <p class="choose-site__item-description">
+                Одно- или многостраничный сайт, в основе которого лежит готовый шаблон
+              </p>
+
+              <ul class="choose-site__item-features">
+                <li class="choose-site__item-feature">
+                  <p>
+                    Изменяем тестовое наполнение
+                  </p>
+                </li>
+                <li class="choose-site__item-feature">
+                  <p>
+                    За дополнительную плату добавляем уникальные страницы/функционал
+                  </p>
+                </li>
+              </ul>
+
+              <span class="choose-site__item-price">
+                от 50&nbsp;000&nbsp;₽
+              </span>
+
+              <a class="choose-site__item-button non-target-btn" href="javascript:;">Узнать цену</a>
+            </div>
+          </div>
+          <div class="choose-site__item choose-site__item--accent choose-site__item--wide">
+            <div class="choose-site__item-head">
+              <h3 class="choose-site__item-title">Уникальный</h3>
+            </div>
+
+            <div class="choose-site__item-body">
+              <p class="choose-site__item-description">
+                Одно- или многостраничный сайт с проработанной логикой и уникальным дизайном, соответствующим вашему фирменному стилю
+              </p>
+
+              <ul class="choose-site__item-features">
+                <li class="choose-site__item-feature">
+                  <p>
+                    Анализируем ваш бизнес и сайты конкурентов
+                  </p>
+                </li>
+                <li class="choose-site__item-feature">
+                  <p>
+                    Прорабатываем логику сайта с учетом потребностей вашей целевой аудиториии и юзабилити
+                  </p>
+                </li>
+                <li class="choose-site__item-feature">
+                  <p>
+                    Разрабатываем уникальный дизайн с учетом адаптивности и кроссбраузерности - так ваш сайт будет отображаться корректно на любом устройстве и в любом браузере
+                  </p>
+                </li>
+                <li class="choose-site__item-feature">
+                  <p>
+                    Верстаем и программируем
+                  </p>
+                </li>
+              </ul>
+
+              <span class="choose-site__item-price">
+                от 100&nbsp;000&nbsp;₽
+              </span>
+
+              <a class="choose-site__item-button target-btn" href="javascript:;">
+                <span>Узнать цену</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-section new-section--not-pt prices-section">
+      <div class="new-container">
+        <h2>Узнайте цену вашего сайта</h2>
+
+        <div class="prices-section__list">
+          <div class="prices-section__item">
+            <h3 class="prices-section__item-heading">Сайт-визитка</h3>
+
+            <p class="prices-section__item-description">Визитная карточка компании</p>
+
+            <img class="prices-section__item-img" src="./img/img-prices-1.png" alt="Сайт-визитка">
+
+            <p class="prices-section__item-tag">Задача</p>
+
+            <p class="prices-section__item-about">Презентовать свою компанию клиентам</p>
+
+            <div class="prices-section__item-prices">
+              <div class="prices-section__item-price">
+                <span class="prices-section__item-price-name">Из готовых блоков</span>
+                <span class="prices-section__item-price-value">От 25&nbsp;000&nbsp;₽</span>
+              </div>
+
+              <div class="prices-section__item-price prices-section__item-price--template">
+                <span class="prices-section__item-price-name">На шаблоне</span>
+                <span class="prices-section__item-price-value">От 50&nbsp;000&nbsp;₽</span>
+              </div>
+
+              <div class="prices-section__item-price prices-section__item-price--unique">
+                <span class="prices-section__item-price-name">Уникальный</span>
+                <span class="prices-section__item-price-value">От 100&nbsp;000&nbsp;₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- -->
 
   </main>
@@ -641,6 +882,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/readmore.min.js"></script>
+  <script src="./js/fancybox.umd.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

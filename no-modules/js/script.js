@@ -54,6 +54,56 @@ $(document).ready(function() {
             nextArrow: protfolioSlider.parent().find('.portfolio__nav-btn--next'),
         });
     }
+
+    //слайдер с отзывами:
+    let reviewsSlider = $('.clients-reviews__slider');
+
+    if (protfolioSlider.length) {
+        reviewsSlider.slick({
+            dots: true,
+            speed: 200,
+            swipeToSlide: true,
+            touchThreshold: 200,
+            prevArrow: reviewsSlider.parents('.reviews-slider').find('.clients-reviews__nav-btn--prev'),
+            nextArrow: reviewsSlider.parents('.reviews-slider').find('.clients-reviews__nav-btn--next'),
+            appendDots: reviewsSlider.parents('.reviews-slider').find('.clients-reviews__slider-dots'),
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1300,
+                settings: {
+                  slidesToShow: 5,
+                }
+              },
+              {
+                breakpoint: 1100,
+                settings: {
+                  slidesToShow: 4,
+                }
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 3,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  variableWidth: true,
+                  arrows: false,
+                  dots: false,
+                }
+              }
+            ]
+        });
+
+        Fancybox.bind('[data-fancybox]', {
+
+        });
+    }
 });
 
 $(window).on('load resize', function() {
