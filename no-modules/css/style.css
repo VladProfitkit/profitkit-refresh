@@ -1698,6 +1698,90 @@ p {
   margin-left: auto;
 }
 
+.prices-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 40px);
+  margin-bottom: -40px;
+}
+
+.prices-section__item {
+  flex-basis: calc(33.3333% - 40px);
+  margin: 0 40px 40px 0;
+  padding: 20px 20px 25px;
+  border-radius: 10px;
+  border: 2px solid var(--white-link-hover);
+}
+
+.prices-section__item-heading {
+  margin: 0;
+  text-align: center;
+  color: #000;
+}
+
+.prices-section__item-description {
+  min-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+.prices-section__item-img {
+  position: relative;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: auto;
+}
+
+.prices-section__item-tag {
+  margin: 0 0 5px;
+  color: var(--pale-link-color);
+}
+
+.prices-section__item-about {
+  margin: 0 0 10px;
+  min-height: 60px;
+}
+
+.prices-section__item-prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-section__item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid var(--neutral-color);
+}
+
+.prices-section__item-price:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.prices-section__item-price--template {
+  border: 1px solid var(--white-link-hover);
+}
+
+.prices-section__item-price--unique {
+  border: 2px solid var(--white-link-hover);
+}
+
+.prices-section__item-price-name {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.prices-section__item-price-value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
 @media (max-width: 1299px) {
   .new-footer__column--copyright,
   .new-footer__column--menu {
@@ -1764,6 +1848,10 @@ p {
   .choose-site__item-description,
   .choose-site__item-features {
     padding: 0;
+  }
+
+  .prices-section__item {
+    flex-basis: calc(50% - 40px)
   }
 }
 
@@ -1928,6 +2016,27 @@ p {
 
   .choose-site__item-body {
     padding: 5px 20px 15px;
+  }
+
+  .prices-section__list {
+    width: calc(100% + 20px);
+    margin-bottom: -20px;
+  }
+
+  .prices-section__item {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .prices-section__item-price-name {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .prices-section__item-price-value {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
