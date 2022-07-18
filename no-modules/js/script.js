@@ -99,11 +99,65 @@ $(document).ready(function() {
               }
             ]
         });
-
-        Fancybox.bind('[data-fancybox]', {
-
-        });
     }
+
+    //инициализация fancybox:
+    Fancybox.bind('[data-fancybox]', {});
+
+    //цены на сайты, переключение на мобильных:
+    let pricesSwitches = $('.prices-section__mobile-switch'),
+        pricesBlocks = $('.prices-section__item');
+
+    pricesSwitches.on('click', function(e) {
+        e.preventDefault();
+
+        let pressedPricesSwitch = $(this),
+            blockId = pressedPricesSwitch.data('price-block');
+
+        pricesSwitches.removeClass('active');
+        pressedPricesSwitch.addClass('active');
+        pricesBlocks.each(function() {
+            if ($(this).data('price-block') == blockId) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+    });
+
+    //анимировакнная промотка к якорям:
+    let anchorLinks = $('.anchors-header__menu-link');
+
+    anchorLinks.on('click', function(e) {
+        e.preventDefault();
+        let link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 1000);
+    });
+
+    //раскрытие шагов в блоке "как мы работаем":
+    let howWeWorkToggles = $('.how-we-work__step-head, .how-we-work__step-toggle'),
+        howWeWorkSteps = $('.how-we-work__step');
+
+    howWeWorkToggles.on('click', function(e) {
+        e.preventDefault();
+        console.log(e.target);
+
+        let step = $(this).closest('.how-we-work__step');
+
+        if (step.hasClass('open')) {
+            step.removeClass('open');
+            step.find('.how-we-work__step-body').slideUp(200);
+        } else if (!step.hasClass('open')) {
+            howWeWorkSteps.removeClass('open');
+            howWeWorkSteps.find('.how-we-work__step-body').slideUp(200);
+            step.addClass('open');
+            step.find('.how-we-work__step-body').slideDown(200);
+        }
+
+        return false;
+    });
 });
 
 $(window).on('load resize', function() {
