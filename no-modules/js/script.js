@@ -158,6 +158,137 @@ $(document).ready(function() {
 
         return false;
     });
+
+    //слайдер с партнерами:
+    let partnersSlider = $('.partners__slider');
+
+    if (partnersSlider.length) {
+        partnersSlider.slick({
+            speed: 200,
+            dots: true,
+            swipeToSlide: true,
+            touchThreshold: 200,
+            prevArrow: partnersSlider.parents('.partners').find('.partners__nav-btn--prev'),
+            nextArrow: partnersSlider.parents('.partners').find('.partners__nav-btn--next'),
+            appendDots: partnersSlider.parents('.partners').find('.partners__slider-dots'),
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1300,
+                settings: {
+                  slidesToShow: 6,
+                }
+              },
+              {
+                breakpoint: 1100,
+                settings: {
+                  slidesToShow: 5,
+                }
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 4,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  variableWidth: true,
+                  arrows: false,
+                  dots: false,
+                }
+              }
+            ]
+        });
+    }
+
+    //модалки:
+    let popupCallBtn = $('[data-modal-id]'),
+        crmPopupCloseBtn = $('.new-modal__close, .new-modal__success-btn, .portfolio-detail__back-btn'),
+        crmPopupBackdrop = $('.new-modal__backdrop');
+
+    const openNewModal = function (btn) {
+        let hashAddress = btn.data('modal-id');
+
+        $(hashAddress).show();
+        body.addClass('modal-open');
+    }
+
+    const closeNewModal = function (btn) {
+        btn.closest('.new-modal').hide();
+        body.removeClass('modal-open');
+    }
+
+    popupCallBtn.on('click', function(e) {
+        e.preventDefault();
+        openNewModal($(this));
+    });
+
+    crmPopupCloseBtn.on('click', function(e) {
+        e.preventDefault();
+        closeNewModal($(this));
+    });
+
+    crmPopupBackdrop.on('click', function(e) {
+        let backdrop = $(this);
+
+        if (!$('.new-modal__content').is(e.target) && $('.new-modal__content').has(e.target).length === 0) {
+            closeNewModal(backdrop);
+        }
+    });
+
+    //имитация submit'а формы в модалке:
+    let modalForm = $('.new-modal__form');
+
+    modalForm.on('submit', function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $(this).parent().children('.new-modal__success').show();
+    });
+
+    //слайдер в модалке портфолио:
+    let portfolioDetailSlider = $('.portfolio-detail__slider');
+
+    if (portfolioDetailSlider.length) {
+        portfolioDetailSlider.slick({
+            infinite: true,
+            speed: 200,
+            dots: true,
+            swipeToSlide: true,
+            touchThreshold: 200,
+            prevArrow: portfolioDetailSlider.parent().find('.portfolio-detail__slider-nav-btn--prev'),
+            nextArrow: portfolioDetailSlider.parent().find('.portfolio-detail__slider-nav-btn--next'),
+            appendDots: portfolioDetailSlider.parent().find('.portfolio-detail__slider-nav-dots'),
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    }
+});
+
+$(window).on('load scroll', function() {
+    let header = $('.refresh-header'),
+        main = $('main');
+
+    if (!header.hasClass('fixed')) {
+        let headerHeight = header.outerHeight(),
+            scrollFromTop = $(document).scrollTop();
+
+        if (scrollFromTop > headerHeight) {
+            header.addClass('fixed');
+            main.css('paddingTop', headerHeight);
+        }
+    } else {
+        let mainPaddingTop = parseInt(main.css('paddingTop')),
+            scrollFromTop = $(document).scrollTop();
+
+        if (scrollFromTop < mainPaddingTop) {
+            header.removeClass('fixed');
+            main.css('paddingTop', 0);
+        }
+    }
 });
 
 $(window).on('load resize', function() {

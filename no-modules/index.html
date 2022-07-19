@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/fancybox.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Profitkit Refresh</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <header class="refresh-header">
@@ -99,7 +100,7 @@
           <p class="refresh-header__phone refresh-header-phone">
             <a href="tel:+78127485186">8 (812) 748-51-86</a>
           </p>
-          <a class="refresh-header__modal-toggle target-btn target-btn--header" href="javascript:;">
+          <a class="refresh-header__modal-toggle target-btn target-btn--header" href="javascript:;" data-modal-id="#modalApplication">
             <span>Узнать цену</span>
           </a>
         </div>
@@ -215,7 +216,7 @@
         </p>
 
         <div class="banner-zone__buttons">
-          <a class="banner-zone__button target-btn" href="javascipt:;">
+          <a class="banner-zone__button target-btn" href="javascipt:;" data-modal-id="#modalApplication">
             <span>Узнать цену</span>
           </a>
           <a class="banner-zone__button non-target-btn" href="#">
@@ -367,7 +368,7 @@
                 </p>
               </div>
 
-              <a class="portfolio__detail-btn" href="javascipt:;">
+              <a class="portfolio__detail-btn" href="javascipt:;" data-modal-id="#modalPortfolio">
                 <span class="portfolio__detail-btn-text">Подробнее</span>
                 <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
@@ -411,7 +412,7 @@
                 </p>
               </div>
 
-              <a class="portfolio__detail-btn" href="javascipt:;">
+              <a class="portfolio__detail-btn" href="javascipt:;" data-modal-id="#modalPortfolio">
                 <span class="portfolio__detail-btn-text">Подробнее</span>
                 <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
@@ -455,7 +456,7 @@
                 </p>
               </div>
 
-              <a class="portfolio__detail-btn" href="javascipt:;">
+              <a class="portfolio__detail-btn" href="javascipt:;" data-modal-id="#modalPortfolio">
                 <span class="portfolio__detail-btn-text">Подробнее</span>
                 <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
@@ -496,7 +497,7 @@
                 </p>
               </div>
 
-              <a class="portfolio__detail-btn" href="javascipt:;">
+              <a class="portfolio__detail-btn" href="javascipt:;" data-modal-id="#modalPortfolio">
                 <span class="portfolio__detail-btn-text">Подробнее</span>
                 <svg class="portfolio__detail-btn-arrow-desktop" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM7 7L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L7 7ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM0.292893 1.70711L6.29289 7.70711L7.70711 6.29289L1.70711 0.292893L0.292893 1.70711ZM7.70711 7.70711L13.7071 1.70711L12.2929 0.292893L6.29289 6.29289L7.70711 7.70711Z" fill="#000"/>
@@ -651,7 +652,7 @@
                 от 25&nbsp;000&nbsp;₽
               </span>
 
-              <a class="choose-site__item-button non-target-btn" href="javascript:;">Узнать цену</a>
+              <a class="choose-site__item-button non-target-btn" href="javascript:;" data-modal-id="#modalApplication">Узнать цену</a>
             </div>
           </div>
           <div class="choose-site__item choose-site__item--accent">
@@ -681,7 +682,7 @@
                 от 50&nbsp;000&nbsp;₽
               </span>
 
-              <a class="choose-site__item-button non-target-btn" href="javascript:;">Узнать цену</a>
+              <a class="choose-site__item-button non-target-btn" href="javascript:;" data-modal-id="#modalApplication">Узнать цену</a>
             </div>
           </div>
           <div class="choose-site__item choose-site__item--accent choose-site__item--wide">
@@ -721,7 +722,7 @@
                 от 100&nbsp;000&nbsp;₽
               </span>
 
-              <a class="choose-site__item-button target-btn" href="javascript:;">
+              <a class="choose-site__item-button target-btn" href="javascript:;" data-modal-id="#modalApplication">
                 <span>Узнать цену</span>
               </a>
             </div>
@@ -1080,7 +1081,7 @@
       </div>
     </section>
 
-    <section class="new-section trust-us">
+    <section class="new-section trust-us" id="whyTrustUs">
       <div class="new-container">
         <h2>Почему нам доверяют более 300 клиентов</h2>
 
@@ -1120,8 +1121,250 @@
         </div>
       </div>
     </section>
-    <!-- -->
 
+    <section class="partners gradient-block">
+      <div class="partners__slider-block">
+        <div class="partners__slider-nav">
+          <button class="partners__nav-btn partners__nav-btn--prev nav-btn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="#000"/>
+            </svg>
+          </button>
+          <button class="partners__nav-btn partners__nav-btn--next nav-btn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+            </svg>
+          </button>
+        </div>
+        <div class="partners__slider">
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-1.svg" alt="Логотип Sanis">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-2.svg" alt="Логотип Incolab">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-3.svg" alt="Логотип Кафельбург">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-4.svg" alt="Логотип СИНЭО">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-5.svg" alt="Логотип Beltel">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-6.svg" alt="Логотип MCBUY">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-7.svg" alt="Логотип Fashionstore">
+          </a>
+          <a class="partners__slide" target="_blank" href="#">
+            <img class="partners__slide-img" src="./img/img-partners-slide-1.svg" alt="Логотип Sanis">
+          </a>
+        </div>
+      </div>
+      <div class="partners__slider-dots"></div>
+    </section>
+
+    <section class="new-section services-short gray-bg">
+      <div class="new-container">
+        <div class="services-short__head new-section__head">
+          <h2>Используйте все средства, чтобы заявить о своем бизнесе</h2>
+          <a class="services-short__head-link new-section__head-link non-target-btn" href="#">Все услуги</a>
+        </div>
+
+        <div class="services-short__list">
+          <div class="services-short__item">
+            <h3 class="services-short__item-title">Контекстная реклама</h3>
+            <span class="services-short__item-price">от&nbsp;15&nbsp;000&nbsp;₽</span>
+          </div>
+
+          <div class="services-short__item">
+            <h3 class="services-short__item-title">Таргетированная реклама</h3>
+            <span class="services-short__item-price">от&nbsp;15&nbsp;000&nbsp;₽</span>
+          </div>
+
+          <div class="services-short__item">
+            <h3 class="services-short__item-title">SEO продвижение</h3>
+            <span class="services-short__item-price">от&nbsp;30&nbsp;000&nbsp;₽</span>
+          </div>
+
+          <div class="services-short__item">
+            <h3 class="services-short__item-title">Разработка сайтов</h3>
+            <span class="services-short__item-price">от&nbsp;50&nbsp;000&nbsp;₽</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-section text-block">
+      <div class="new-container">
+        <h2>Заголовок</h2>
+
+        <p class="text-block__text">
+          SEO ТЕКСТ Благодаря предварительному созданию прототипов мы можем сконцентрироваться на логичности структуры страниц и сайта в целом Благодаря предварительному созданию прототипов мы можем сконцентрироваться на логичности структуры страниц и сайта в целомБлагодаря предварительному созданию прототипов мы можем сконцентрироваться на логичности структуры страниц и сайта в целомБлагодаря предварительному созданию прототипов мы можем сконцентрироваться на логичности структуры страниц и сайта
+        </p>
+      </div>
+    </section>
+
+    <section class="new-section cta-block accent-bg">
+      <div class="new-container">
+        <h2>Остались вопросы?</h2>
+
+        <p class="cta-block__text">
+          Задайте их специалисту!
+        </p>
+
+        <a class="cta-block__btn non-target-btn non-target-btn--cta" href="javascript:;" data-modal-id="#modalApplication">
+          <span>Задать вопрос</span>
+        </a>
+      </div>
+    </section>
+
+    <div id="map" style="height:550px;"></div>
+  	<script>
+        setTimeout(function () {
+            ymaps.ready(function () {
+
+              if (jQuery(window).width() > 977)
+              {
+                  // image_src = '/local/templates/profitkit/i/metka-test.png';
+                  image_src = './img/metka-test.svg';
+                  image_size = [471, 54];
+      			      iconImageOffset = [-468, -25];
+              }
+              else
+              {
+                  // image_src = '/local/templates/profitkit/i/maptag_m-test.png';
+                  image_src = './img/maptag_m-test.svg';
+                  image_size = [49, 65];
+      			      iconImageOffset = [-20, -70];
+              }
+              var myMap = new ymaps.Map('map', {
+                      center: [59.918761, 30.391906],
+                      zoom: 15
+                  }, {
+                      searchControlProvider: 'yandex#search'
+                  }),
+                  myPlacemark = new ymaps.Placemark([59.915471, 30.390752], {
+                      hintContent: '',
+                      balloonContent: ''
+                  }, {
+                      // Опции.
+                      // Необходимо указать данный тип макета.
+                      iconLayout: 'default#image',
+                      // Своё изображение иконки метки.
+                      iconImageHref: image_src,
+                      // Размеры метки.
+                      iconImageSize: image_size,
+                      // Смещение левого верхнего угла иконки относительно
+                      // её "ножки" (точки привязки).
+                      iconImageOffset: iconImageOffset
+                  });
+
+              myMap.geoObjects.add(myPlacemark);
+              myMap.behaviors.disable('scrollZoom');
+      		    myMap.behaviors.disable('drag');
+
+    	        // Создаем ломаную с помощью вспомогательного класса Polyline.
+              var myPolyline = new ymaps.Polyline([
+                  // Указываем координаты вершин ломаной.
+                  [59.924196, 30.385191],
+                  [59.923786, 30.384440],
+                  [59.923436, 30.385052],
+            			[59.923140, 30.386034],
+            			[59.923544, 30.386463],
+                  [59.923840, 30.387723],
+            			[59.923857, 30.388051],
+            			[59.920926, 30.393624],
+            			[59.920953, 30.394006],
+            			[59.919097, 30.397319],
+            			[59.918359, 30.395194],
+            			[59.917487, 30.394164],
+            			[59.914982, 30.391428],
+            			[59.914879, 30.390967],
+            			[59.915466, 30.390388]
+              ], {
+                  // Описываем свойства геообъекта.
+                  // Содержимое балуна.
+                  balloonContent: "Пеший маршрут"
+              }, {
+                  // Задаем опции геообъекта.
+                  // Отключаем кнопку закрытия балуна.
+                  balloonCloseButton: false,
+                  // Цвет линии.
+                  strokeColor: "#000000",
+                  // Ширина линии.
+                  strokeWidth: 4,
+                  // Коэффициент прозрачности.
+                  strokeOpacity: 0.5,
+      			      strokeStyle: '2 2'
+              });
+
+              // Добавляем линии на карту.
+              myMap.geoObjects
+                  .add(myPolyline);
+
+          	  var myPolyline2 = new ymaps.Polyline([
+                      // Указываем координаты вершин ломаной.
+                      [59.923709, 30.386442],
+                      [59.924032, 30.388008],
+                      [59.923865, 30.388233],
+                			[59.921509, 30.393229],
+                			[59.917528, 30.400385],
+                			[59.915039, 30.397735],
+                			[59.915934, 30.394109],
+                			[59.914781, 30.392789],
+                			[59.914689, 30.391909],
+                			[59.914942, 30.391416],
+                			[59.914872, 30.391008]
+                  ], {
+                      // Описываем свойства геообъекта.
+                      // Содержимое балуна.
+                      balloonContent: "На машине"
+                  }, {
+                      // Задаем опции геообъекта.
+                      // Отключаем кнопку закрытия балуна.
+                      balloonCloseButton: false,
+                      // Цвет линии.
+                      strokeColor: "#06F",
+                      // Ширина линии.
+                      strokeWidth: 4,
+                      // Коэффициент прозрачности.
+                      strokeOpacity: 0.8
+                  });
+
+              // Добавляем линии на карту.
+              myMap.geoObjects
+                  .add(myPolyline2);
+                  var myPolyline3 = new ymaps.Polyline([
+                          // Указываем координаты вершин ломаной.
+                          [59.913607, 30.405249],
+                          [59.914868, 30.403693],
+                          [59.914028, 30.400678],
+                          [59.915822, 30.398608],
+                      ], {
+                          // Описываем свойства геообъекта.
+                          // Содержимое балуна.
+                          balloonContent: "На машине"
+                      }, {
+                          // Задаем опции геообъекта.
+                          // Отключаем кнопку закрытия балуна.
+                          balloonCloseButton: false,
+                          // Цвет линии.
+                          strokeColor: "#06F",
+                          // Ширина линии.
+                          strokeWidth: 4,
+                          // Коэффициент прозрачности.
+                          strokeOpacity: 0.8
+                      });
+
+                  // Добавляем линии на карту.
+                  myMap.geoObjects
+                      .add(myPolyline3);
+                  });
+              }, 1000)
+      </script>
   </main>
 
   <footer class="new-footer new-footer--all gradient-block">
@@ -1231,6 +1474,145 @@
       </p>
     </div>
   </footer>
+
+  <div class="new-modal" id="modalApplication" style="display: none;">
+    <div class="new-modal__backdrop">
+      <div class="new-modal__content">
+        <button class="new-modal__close">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21M1 1L21 21" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <form class="new-modal__form" action="#" method="post">
+          <h2>Оставить заявку</h2>
+
+          <div class="new-modal__form-inputs">
+            <input class="new-modal__form-input text-input" type="text" name="NAME" placeholder="Ваше имя">
+            <input class="new-modal__form-input text-input" type="text" name="PHONE" placeholder="Телефон">
+          </div>
+          <textarea class="new-modal__form-textarea textarea-input" name="MESSAGE" placeholder="Сообщение"></textarea>
+          <div class="new-modal__footer">
+            <button class="new-modal__form-submit target-btn" type="submit">
+              <span>Отправить</span>
+            </button>
+            <p class="new-modal__agreement">
+              Нажимая на кнопку «Отправить», я даю согласие <a href="#" target="_blank">на обработку персональных данных (152-ФЗ)</a>
+            </p>
+          </div>
+        </form>
+
+        <div class="new-modal__success" style="display: none;">
+          <h2>
+            Спасибо за заявку!<br> Наш менеджер свяжется с Вами в&nbsp;ближайшее&nbsp;время
+          </h2>
+          <button class="new-modal__success-btn target-btn">
+            <span>Закрыть</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-modal" id="modalPortfolio" style="display: none;">
+    <div class="new-modal__backdrop">
+      <div class="new-modal__content new-modal__content--fullscreen">
+        <button class="new-modal__close">
+          <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21M1 1L21 21" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <article class="new-modal__content-inner portfolio-detail">
+          <aside class="portfolio-detail__aside" style="background-image: url('./img/bg-portfolio-modal.jpg')">
+            <div class="portfolio-detail__aside-items">
+              <p class="portfolio-detail__aside-item">
+                <span class="portfolio-detail__aside-heading">Клиент</span>
+                <span class="portfolio-detail__aside-value portfolio-detail__aside-value--big">Медиапрайс</span>
+              </p>
+
+              <p class="portfolio-detail__aside-item">
+                <span class="portfolio-detail__aside-heading">Проект</span>
+                <span class="portfolio-detail__aside-value">Уникальный конфигуратор мероприятия</span>
+              </p>
+
+              <p class="portfolio-detail__aside-item">
+                <span class="portfolio-detail__aside-heading">Результат</span>
+                <span class="portfolio-detail__aside-value">Перевод бизнес-процессов в онлайн формат</span>
+              </p>
+            </div>
+          </aside>
+
+          <div class="portfolio-detail__main">
+            <div class="portfolio-detail__main-left">
+              <button class="portfolio-detail__back-btn">
+                <svg class="portfolio-detail__back-btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="black"/>
+                </svg>
+                <span class="portfolio-detail__back-btn-text">Вернуться</span>
+              </button>
+
+              <div class="portfolio-detail__text">
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Клиент</span>
+                  <p class="portfolio-detail__text-item-text">Компания <b>«Медиапрайс»</b> крупное маркетинговое агентство. Занимающееся продвижением мировых брендов на Российском рынке</p>
+                </div>
+
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Задача</span>
+                  <p class="portfolio-detail__text-item-text">При реализации каждого проекта менеджер компании <b>«Медиапрайс»</b> взаимодействует с большим количеством подрядчиков и огромным количеством вариантов услуг. Все мерояприятия нужно спланировать по времени, выбрать услуги и сопутствующие работы, согласовать все с клиентом</p>
+                </div>
+
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Для реализации было сделано</span>
+                  <p class="portfolio-detail__text-item-text">Был проведен анализ рабочих процессов и разработана логическая концепция системы которая была утрверждена с первого раза. В процессе у клиента возникали новые идеи по упрощению рабочих процессов, которые мы помогали оптимально реализовать</p>
+                </div>
+
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Результат</span>
+                  <p class="portfolio-detail__text-item-text"><b>Была реализована функционально сложная платформа помогающая нашему клиенту быстро организовать комплексные маркетинговые мероприятия в простой интерактивной форме</b></p>
+                </div>
+              </div>
+
+              <a class="portfolio-detail__appoint-btn target-btn" href="javascript:;" data-modal-id="#modalApplication">
+                <span>Оставить заявку</span>
+              </a>
+            </div>
+
+            <div class="portfolio-detail__main-right">
+              <div class="portfolio-detail__slider-block">
+                <div class="portfolio-detail__slider">
+                  <div class="portfolio-detail__slider-item">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-1.jpg" alt="Скриншот проекта">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-2.jpg" alt="Скриншот проекта">
+                  </div>
+
+                  <div class="portfolio-detail__slider-item">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-3.jpg" alt="Скриншот проекта">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-4.jpg" alt="Скриншот проекта">
+                  </div>
+                </div>
+
+                <div class="portfolio-detail__slider-nav">
+                  <button class="portfolio-detail__slider-nav-btn portfolio-detail__slider-nav-btn--prev nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="portfolio-detail__slider-nav-dots"></div>
+                  <button class="portfolio-detail__slider-nav-btn portfolio-detail__slider-nav-btn--next nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./js/slick.min.js"></script>
