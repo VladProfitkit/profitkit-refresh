@@ -223,8 +223,16 @@ $(document).ready(function() {
     }
 
     popupCallBtn.on('click', function(e) {
+        if ($('.new-modal:visible').length) {
+            $('.new-modal').hide();
+        }
+
         e.preventDefault();
         openNewModal($(this));
+
+        if ($('.new-modal:visible .slick-initialized').length) {
+            $('.new-modal:visible .slick-initialized').slick('unslick').slick(portfolioDetailSliderSettings());
+        }
     });
 
     crmPopupCloseBtn.on('click', function(e) {
@@ -250,10 +258,9 @@ $(document).ready(function() {
     });
 
     //слайдер в модалке портфолио:
-    let portfolioDetailSlider = $('.portfolio-detail__slider');
-
-    if (portfolioDetailSlider.length) {
-        portfolioDetailSlider.slick({
+    let portfolioDetailSlider = $('.portfolio-detail__slider'),
+        portfolioDetailSliderSettings = function getSliderSettings() {
+        return {
             infinite: true,
             speed: 200,
             dots: true,
@@ -264,7 +271,11 @@ $(document).ready(function() {
             appendDots: portfolioDetailSlider.parent().find('.portfolio-detail__slider-nav-dots'),
             slidesToShow: 1,
             slidesToScroll: 1,
-        });
+        }
+    };
+
+    if (portfolioDetailSlider.length) {
+        portfolioDetailSlider.slick(portfolioDetailSliderSettings());
     }
 });
 
