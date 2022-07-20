@@ -994,6 +994,13 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.banner-numbers__number span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+}
+
 .banner-numbers__description {
   display: inline-block;
   max-width: 200px;
@@ -2041,6 +2048,19 @@ p {
   padding-top: 12px;
 }
 
+.trust-us--narrow .trust-us__items {
+  position: relative;
+  left: 40px;
+  width: calc(75% + 80px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.trust-us--narrow .trust-us__item {
+  flex-basis: calc(33.3333% - 80px);
+  margin-right: 80px;
+}
+
 .trust-us__item::before {
   content: "";
   position: absolute;
@@ -2670,6 +2690,11 @@ p {
   .portfolio-detail__main-right {
     width: 350px;
   }
+
+  .trust-us--narrow .trust-us__items {
+    position: static;
+    width: calc(100% + 80px);
+  }
 }
 
 @media (max-width: 1099px) {
@@ -2747,6 +2772,10 @@ p {
   .banner-numbers__number::before {
     width: 190px;
     height: 91px;
+  }
+
+  .banner-numbers__number span {
+    font-size: 16px;
   }
 
   .banner-numbers__description {
@@ -2911,6 +2940,16 @@ p {
 
   .portfolio-detail__main {
     padding: 30px 0 30px 30px;
+  }
+
+  .trust-us--narrow .trust-us__items {
+    left: 20px;
+    width: calc(100% + 40px);
+  }
+
+  .trust-us--narrow .trust-us__item {
+    margin-right: 40px;
+    flex-basis: calc(33.3333% - 40px);
   }
 }
 
@@ -3253,6 +3292,15 @@ p {
     width: 100%;
     padding-top: 60px;
   }
+
+  .trust-us--narrow .trust-us__items {
+    width: calc(100% + 20px);
+  }
+
+  .trust-us--narrow .trust-us__item {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3397,6 +3445,10 @@ p {
   .banner-numbers__number {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .banner-numbers__number span {
+    font-size: 14px;
   }
 
   .banner-numbers__description {
@@ -3937,6 +3989,15 @@ p {
 
   .portfolio-detail__main-right {
     padding-top: 40px;
+  }
+
+  .trust-us--narrow .trust-us__items {
+    width: 100%;
+  }
+
+  .trust-us--narrow .trust-us__item {
+    flex-basis: auto;
+    margin-right: 0;
   }
 }
 
