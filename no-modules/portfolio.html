@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/fancybox.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Profitkit Refresh Portfolio</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <header class="refresh-header">
+    <div class="refresh-header__top gradient-block">
+      <div class="refresh-header__top-container new-container">
+        <div class="refresh-header__logo-block-wrapper">
+          <div class="refresh-header__logo-block">
+            <a class="refresh-header__logo-link" href="/">
+              <img src="./img/logo-mobile-menu-crm.svg" alt="Логотип Profitkit" width="164" height="24">
+            </a>
+            <p class="refresh-header__logo-slogan">
+              интернет-агентство<br> в Санкт-Петербурге
+            </p>
+          </div>
+          <button class="refresh-header__mobile-menu-toggle"></button>
+        </div>
+        <nav class="refresh-header__nav-block">
+          <ul class="refresh-header__contacts">
+            <li class="refresh-header__contacts-item">
+              <p class="refresh-header__contacts-link refresh-header__contacts-link--address">
+                наб. Обводного канала, 14к4
+              </p>
+            </li>
+            <li class="refresh-header__contacts-item">
+              <p class="refresh-header__contacts-link refresh-header__contacts-link--email">
+                <a href="mailto:info+331746@profitkit.ru">info+331746@profitkit.ru</a>
+              </p>
+            </li>
+            <li class="refresh-header__contacts-item">
+              <p class="refresh-header__contacts-link refresh-header__contacts-link--vk">
+                <a href="https://vk.com/profitkit_ru/" target="_blank">vk.com/profitkit_ru</a>
+              </p>
+            </li>
+          </ul>
+          <ul class="refresh-header__menu">
+            <li class="refresh-header__menu-item">
+              <a class="refresh-header__menu-link" href="/">Главная</a>
+            </li>
+            <li class="refresh-header__menu-item refresh-header__menu-item--parent">
+              <a class="refresh-header__menu-link refresh-header__menu-link--parent" href="#">Услуги</a>
+              <ul class="refresh-header__submenu">
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Создание сайтов</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link refresh-header__submenu-link--deeper" href="#">Корпоративные сайты</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link refresh-header__submenu-link--deeper" href="#">Интернет-магазины</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Продвижение</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Поддержка</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Реклама</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Дизайн</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Внедрение готовых решений</a>
+                </li>
+                <li class="refresh-header__submenu-item">
+                  <a class="refresh-header__submenu-link" href="#">Интернет-магазины</a>
+                </li>
+              </ul>
+            </li>
+            <li class="refresh-header__menu-item">
+              <a class="refresh-header__menu-link" href="#">Цены</a>
+            </li>
+            <li class="refresh-header__menu-item">
+              <a class="refresh-header__menu-link" href="#">Портфолио</a>
+            </li>
+            <li class="refresh-header__menu-item">
+              <a class="refresh-header__menu-link" href="#">Отзывы</a>
+            </li>
+            <li class="refresh-header__menu-item">
+              <a class="refresh-header__menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="refresh-header__contacts-block">
+          <p class="refresh-header__phone refresh-header-phone">
+            <a href="tel:+78127485186">8 (812) 748-51-86</a>
+          </p>
+          <a class="refresh-header__modal-toggle target-btn target-btn--header" href="javascript:;" data-modal-id="#modalApplication">
+            <span>Узнать цену</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="refresh-header__mobile-menu-block">
+      <div class="new-container">
+        <div class="refresh-header__mobile-menu-head">
+          <div class="refresh-header__mobile-menu-logo-block">
+            <a class="refresh-header__mobile-menu-logo" href="/">
+              <img src="./img/logo-mobile-menu-crm.svg" alt="Логотип Profitkit" width="164" height="24">
+            </a>
+            <p class="refresh-header__mobile-menu-slogan">
+              интернет-агентство<br> в Санкт-Петербурге
+            </p>
+          </div>
+          <button class="refresh-header__mobile-menu-close"></button>
+        </div>
+        <ul class="refresh-header__mobile-menu">
+          <li class="refresh-header__mobile-menu-item">
+            <a class="refresh-header__mobile-menu-link" href="#">Главная</a>
+          </li>
+          <li class="refresh-header__mobile-menu-item">
+            <a class="refresh-header__mobile-menu-link" href="#">Услуги</a>
+          </li>
+          <li class="refresh-header__mobile-menu-item">
+            <a class="refresh-header__mobile-menu-link" href="#">Цены</a>
+          </li>
+          <li class="refresh-header__mobile-menu-item">
+            <a class="refresh-header__mobile-menu-link" href="#">Портфолио</a>
+          </li>
+          <li class="refresh-header__mobile-menu-item">
+            <a class="refresh-header__mobile-menu-link" href="#">Отзывы</a>
+          </li>
+          <li class="refresh-header__mobile-menu-item">
+            <a class="refresh-header__mobile-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="refresh-header__mobile-menu-contacts">
+          <li class="refresh-header__mobile-menu-contact-item">
+            <p class="refresh-header__mobile-menu-contact-link refresh-header__mobile-menu-contact-link--phone">
+              <a href="tel:+78127485186">8 (812) 748-51-86</a>
+            </p>
+          </li>
+          <li class="refresh-header__mobile-menu-contact-item">
+            <p class="refresh-header__mobile-menu-contact-link refresh-header__mobile-menu-contact-link--address">
+              наб. Обводного канала, 14к4
+            </p>
+          </li>
+          <li class="refresh-header__mobile-menu-contact-item">
+            <p class="refresh-header__mobile-menu-contact-link refresh-header__mobile-menu-contact-link--email">
+              <a href="mailto:info+331746@profitkit.ru">info+331746@profitkit.ru</a>
+            </p>
+          </li>
+          <li class="refresh-header__mobile-menu-contact-item">
+            <p class="refresh-header__mobile-menu-contact-link refresh-header__mobile-menu-contact-link--vk">
+              <a href="https://vk.com/profitkit_ru/" target="_blank">vk.com/profitkit_ru</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="banner-zone">
+      <div class="new-container">
+        <div class="banner-zone__breadcrumbs breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Портфолио</a>
+            </li>
+          </ul>
+        </div>
+        <h1 class="page-title">
+          Портфолио
+        </h1>
+      </div>
+    </div>
+
+    <section class="portfolio">
+      <div class="new-container">
+        <div class="portfolio__toggles">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+        </div>
+
+        <div class="portfolio__items">
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-1.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-1.png" alt="Разработка интернет-магазина пляжной одежды">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-1.jpg')">
+              <h2 class="portfolio__item-name">Разработка интернет-магазина пляжной одежды</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-2.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-2.png" alt="Разработка сайта недвижимости">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-2.jpg')">
+              <h2 class="portfolio__item-name">Разработка сайта недвижимости</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-3.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-3.png" alt="Разработка сайта института">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-3.jpg')">
+              <h2 class="portfolio__item-name">Разработка сайта института</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-4.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-4.png" alt="Разработка сайта управляющей компании">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-4.jpg')">
+              <h2 class="portfolio__item-name">Разработка сайта управляющей компании</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-5.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-5.png" alt="Разработка сайта-визитки магазина">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-5.jpg')">
+              <h2 class="portfolio__item-name">Разработка сайта-визитки магазина</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-6.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-6.png" alt="Разработка калькулятора стоимости">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-6.jpg')">
+              <h2 class="portfolio__item-name">Разработка калькулятора стоимости</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-7.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-7.png" alt="Разработка интернет-магазина дилера женской одежды">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-7.jpg')">
+              <h2 class="portfolio__item-name">Разработка интернет-магазина дилера женской одежды</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-8.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-8.png" alt="Разработка интернет-магазина дилера одежды">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-8.jpg')">
+              <h2 class="portfolio__item-name">Разработка интернет-магазина дилера одежды</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-9.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-9.png" alt="Разработка лэндинга ресторана">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-9.jpg')">
+              <h2 class="portfolio__item-name">Разработка лэндинга ресторана</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-10.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-10.png" alt="Разработка сайта-визитки магазинаРазработка сайта общественного движения">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-10.jpg')">
+              <h2 class="portfolio__item-name">Разработка сайта общественного движения</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-11.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-11.png" alt="Разработка интернет-магазина мебели">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-11.jpg')">
+              <h2 class="portfolio__item-name">Разработка интернет-магазина мебели</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="portfolio__item" href="#">
+            <div class="portfolio__item-default" style="background-image: url('./img/img-portfolio-12.jpg')">
+              <img class="portfolio__item-logo" src="./img/img-portfolio-logo-12.png" alt="Разработка лэндинга дистрибьютора техники">
+            </div>
+
+            <div class="portfolio__item-hover" style="background-image: url('./img/img-portfolio-hover-12.jpg')">
+              <h2 class="portfolio__item-name">Разработка лэндинга дистрибьютора техники</h2>
+              <div class="portfolio__item-tags">
+                <span class="portfolio__item-tag">Разработка</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="new-footer new-footer--all gradient-block">
+    <div class="new-footer__container new-container">
+      <div class="new-footer__column new-footer__column--copyright">
+        <div class="new-footer__logo-block">
+        <a class="new-footer__logo" href="/">
+          <img src="./img/logo-mobile-menu-crm.svg" alt="Логотип Profitkit" width="164" height="24">
+        </a>
+          <span class="new-footer__logo-slogan">
+            Интернет-агентство<br> в Санкт-Петербурге
+          </span>
+        </div>
+        <p class="new-footer__policy new-footer__policy--desktop">
+          <a href="#">Политика конфиденциальности</a>
+        </p>
+      </div>
+
+      <div class="new-footer__column new-footer__column--menu">
+        <ul class="new-footer__menu">
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-one">
+            <a class="new-footer__menu-link" href="/">Главная</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-one">
+            <a class="new-footer__menu-link" href="/tseny/">Цены</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-one">
+            <a class="new-footer__menu-link" href="/portfolio/">Портфолио и отзывы</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-one">
+            <a class="new-footer__menu-link" href="#">Вакансии</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-one">
+            <a class="new-footer__menu-link" href="/kontakty/">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="new-footer__column new-footer__column--menu">
+        <ul class="new-footer__menu">
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-one">
+            <a class="new-footer__menu-link" href="/uslugi/">Услуги</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-two">
+            <a class="new-footer__menu-link" href="/razrabotka-saytov/">Создание сайтов</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-three">
+            <a class="new-footer__menu-link" href="/razrabotka-saytov/sozdanie-korporativnykh-saytov/">Корпоративные сайты</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-three">
+            <a class="new-footer__menu-link" href="/razrabotka-saytov/sozdanie-internet-magazinov/">Интернет-магазины</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-two">
+            <a class="new-footer__menu-link" href="/prodvizhenie-saytov/">Продвижение</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-two">
+            <a class="new-footer__menu-link" href="/podderzhka-saytov/">Поддержка</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="new-footer__column new-footer__column--menu">
+        <ul class="new-footer__menu">
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-two">
+            <a class="new-footer__menu-link" href="/prodvizhenie-saytov/reklama/">Реклама</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-two">
+            <a class="new-footer__menu-link" href="/dizain-saita/">Дизайн</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-two">
+            <a class="new-footer__menu-link" href="/gotovye-resheniya/">Внедрение готовых решений</a>
+          </li>
+
+          <li class="new-footer__menu-item new-footer__menu-item--lvl-three">
+            <a class="new-footer__menu-link" href="/gotovye-resheniya/intec-universe-internet-magazin-s-konstruktorom-dizayn/">Интернет-магазины</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="new-footer__column new-footer__column--contacts">
+        <p class="new-footer__contacts-item new-footer__contacts-item--phone">
+          <a href="tel:+78127485186" target="_blank">8 (812) 748-51-86</a>
+        </p>
+        <p class="new-footer__contacts-item new-footer__contacts-item--address">
+          наб. Обводного канала, 14к4
+        </p>
+        <p class="new-footer__contacts-item new-footer__contacts-item--email">
+          <a href="mailto:info+331746@profitkit.ru" target="_blank">info+331746@profitkit.ru</a>
+        </p>
+        <p class="new-footer__contacts-item new-footer__contacts-item--vk">
+          <a href="https://vk.com/profitkit_ru/" target="_blank">vk.com/profitkit_ru</a>
+        </p>
+      </div>
+      <p class="new-footer__policy new-footer__policy--mobile">
+        <a href="#">Политика конфиденциальности</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="new-modal" id="modalApplication" style="display: none;">
+    <div class="new-modal__backdrop">
+      <div class="new-modal__content">
+        <button class="new-modal__close">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21M1 1L21 21" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <form class="new-modal__form" action="#" method="post">
+          <h2>Оставить заявку</h2>
+
+          <div class="new-modal__form-inputs">
+            <input class="new-modal__form-input text-input" type="text" name="NAME" placeholder="Ваше имя">
+            <input class="new-modal__form-input text-input" type="text" name="PHONE" placeholder="Телефон">
+          </div>
+          <textarea class="new-modal__form-textarea textarea-input" name="MESSAGE" placeholder="Сообщение"></textarea>
+          <div class="new-modal__footer">
+            <button class="new-modal__form-submit target-btn" type="submit">
+              <span>Отправить</span>
+            </button>
+            <p class="new-modal__agreement">
+              Нажимая на кнопку «Отправить», я даю согласие <a href="#" target="_blank">на обработку персональных данных (152-ФЗ)</a>
+            </p>
+          </div>
+        </form>
+
+        <div class="new-modal__success" style="display: none;">
+          <h2>
+            Спасибо за заявку!<br> Наш менеджер свяжется с Вами в&nbsp;ближайшее&nbsp;время
+          </h2>
+          <button class="new-modal__success-btn target-btn">
+            <span>Закрыть</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-modal" id="modalPortfolio" style="display: none;">
+    <div class="new-modal__backdrop">
+      <div class="new-modal__content new-modal__content--fullscreen">
+        <button class="new-modal__close">
+          <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21M1 1L21 21" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <article class="new-modal__content-inner portfolio-detail">
+          <aside class="portfolio-detail__aside" style="background-image: url('./img/bg-portfolio-modal.jpg')">
+            <div class="portfolio-detail__aside-items">
+              <p class="portfolio-detail__aside-item">
+                <span class="portfolio-detail__aside-heading">Клиент</span>
+                <span class="portfolio-detail__aside-value portfolio-detail__aside-value--big">Медиапрайс</span>
+              </p>
+
+              <p class="portfolio-detail__aside-item">
+                <span class="portfolio-detail__aside-heading">Проект</span>
+                <span class="portfolio-detail__aside-value">Уникальный конфигуратор мероприятия</span>
+              </p>
+
+              <p class="portfolio-detail__aside-item">
+                <span class="portfolio-detail__aside-heading">Результат</span>
+                <span class="portfolio-detail__aside-value">Перевод бизнес-процессов в онлайн формат</span>
+              </p>
+            </div>
+          </aside>
+
+          <div class="portfolio-detail__main">
+            <div class="portfolio-detail__main-left">
+              <button class="portfolio-detail__back-btn">
+                <svg class="portfolio-detail__back-btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="black"/>
+                </svg>
+                <span class="portfolio-detail__back-btn-text">Вернуться</span>
+              </button>
+
+              <div class="portfolio-detail__text">
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Клиент</span>
+                  <p class="portfolio-detail__text-item-text">Компания <b>«Медиапрайс»</b> крупное маркетинговое агентство. Занимающееся продвижением мировых брендов на Российском рынке</p>
+                </div>
+
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Задача</span>
+                  <p class="portfolio-detail__text-item-text">При реализации каждого проекта менеджер компании <b>«Медиапрайс»</b> взаимодействует с большим количеством подрядчиков и огромным количеством вариантов услуг. Все мерояприятия нужно спланировать по времени, выбрать услуги и сопутствующие работы, согласовать все с клиентом</p>
+                </div>
+
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Для реализации было сделано</span>
+                  <p class="portfolio-detail__text-item-text">Был проведен анализ рабочих процессов и разработана логическая концепция системы которая была утрверждена с первого раза. В процессе у клиента возникали новые идеи по упрощению рабочих процессов, которые мы помогали оптимально реализовать</p>
+                </div>
+
+                <div class="portfolio-detail__text-item">
+                  <span class="portfolio-detail__text-item-heading">Результат</span>
+                  <p class="portfolio-detail__text-item-text"><b>Была реализована функционально сложная платформа помогающая нашему клиенту быстро организовать комплексные маркетинговые мероприятия в простой интерактивной форме</b></p>
+                </div>
+              </div>
+
+              <a class="portfolio-detail__appoint-btn target-btn" href="javascript:;" data-modal-id="#modalApplication">
+                <span>Оставить заявку</span>
+              </a>
+            </div>
+
+            <div class="portfolio-detail__main-right">
+              <div class="portfolio-detail__slider-block">
+                <div class="portfolio-detail__slider">
+                  <div class="portfolio-detail__slider-item">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-1.jpg" alt="Скриншот проекта">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-2.jpg" alt="Скриншот проекта">
+                  </div>
+
+                  <div class="portfolio-detail__slider-item">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-3.jpg" alt="Скриншот проекта">
+                    <img class="portfolio-detail__slider-item-img" src="./img/img-portfolio-modal-slider-4.jpg" alt="Скриншот проекта">
+                  </div>
+                </div>
+
+                <div class="portfolio-detail__slider-nav">
+                  <button class="portfolio-detail__slider-nav-btn portfolio-detail__slider-nav-btn--prev nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="portfolio-detail__slider-nav-dots"></div>
+                  <button class="portfolio-detail__slider-nav-btn portfolio-detail__slider-nav-btn--next nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <a class="portfolio-detail__appoint-btn portfolio-detail__appoint-btn--mobile target-btn" href="javascript:;" data-modal-id="#modalApplication">
+                <span>Оставить заявку</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/readmore.min.js"></script>
+  <script src="./js/fancybox.umd.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

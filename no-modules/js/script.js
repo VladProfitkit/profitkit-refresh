@@ -308,27 +308,35 @@ $(window).on('load resize', function() {
 
     if ($(window).width() <= 767) {
         //текст под баннером на странице услуги:
-        bannerZoneDescription.readmore({
-          speed: 200,
-          collapsedHeight: 50,
-          heightMargin: 10,
-          moreLink: '<a class="banner-zone__description-expand closed" href="javascipt:;">Читать полностью</a>',
-          lessLink: '<a class="banner-zone__description-expand open" href="javascipt:;">Свернуть</a>',
-        });
+        if (bannerZoneDescription.length) {
+            bannerZoneDescription.readmore({
+                speed: 200,
+                collapsedHeight: 50,
+                heightMargin: 10,
+                moreLink: '<a class="banner-zone__description-expand closed" href="javascipt:;">Читать полностью</a>',
+                lessLink: '<a class="banner-zone__description-expand open" href="javascipt:;">Свернуть</a>',
+            });
+        }
 
-        //автоподмена картинок в портфолио:
-        portfolioSlideImg.each(function() {
-          let portfolioSlideImgMobSrc = $(this).data('mobile-src');
-          $(this).attr('src', portfolioSlideImgMobSrc);
-        });
+        //автоподмена картинок в блоке портфолио:
+        if (portfolioSlideImg.length) {
+            portfolioSlideImg.each(function() {
+                let portfolioSlideImgMobSrc = $(this).data('mobile-src');
+                $(this).attr('src', portfolioSlideImgMobSrc);
+            });
+        }
     } else {
         //текст под баннером на странице услуги:
-        bannerZoneDescription.readmore('destroy');
+        if (bannerZoneDescription.length) {
+            bannerZoneDescription.readmore('destroy');
+        }
 
-        //автоподмена картинок в портфолио:
-        portfolioSlideImg.each(function() {
-          let portfolioSlideImgDeskSrc = $(this).data('desktop-src');
-          $(this).attr('src', portfolioSlideImgDeskSrc);
-        });
+        //автоподмена картинок в блоке портфолио:
+        if (portfolioSlideImg.length) {
+            portfolioSlideImg.each(function() {
+                let portfolioSlideImgDeskSrc = $(this).data('desktop-src');
+                $(this).attr('src', portfolioSlideImgDeskSrc);
+            });
+        }
     }
 });
