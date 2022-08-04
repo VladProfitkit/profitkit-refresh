@@ -136,24 +136,24 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    //раскрытие шагов в блоке "как мы работаем":
-    let howWeWorkToggles = $('.how-we-work__step-head, .how-we-work__step-toggle'),
-        howWeWorkSteps = $('.how-we-work__step');
+    //раскрытие аккордеонов:
+    let accordionToggles = $('.accordion__head, .accordion__toggle');
 
-    howWeWorkToggles.on('click', function(e) {
+    accordionToggles.on('click', function(e) {
         e.preventDefault();
         console.log(e.target);
 
-        let step = $(this).closest('.how-we-work__step');
+        let step = $(this).closest('.accordion'),
+            accordions = step.parent('.accordions').children();
 
         if (step.hasClass('open')) {
             step.removeClass('open');
-            step.find('.how-we-work__step-body').slideUp(200);
+            step.find('.accordion__body').slideUp(200);
         } else if (!step.hasClass('open')) {
-            howWeWorkSteps.removeClass('open');
-            howWeWorkSteps.find('.how-we-work__step-body').slideUp(200);
+            accordions.removeClass('open');
+            accordions.find('.accordion__body').slideUp(200);
             step.addClass('open');
-            step.find('.how-we-work__step-body').slideDown(200);
+            step.find('.accordion__body').slideDown(200);
         }
 
         return false;
