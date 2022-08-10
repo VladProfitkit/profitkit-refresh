@@ -277,6 +277,42 @@ $(document).ready(function() {
     if (portfolioDetailSlider.length) {
         portfolioDetailSlider.slick(portfolioDetailSliderSettings());
     }
+
+    //раскрытие фильтров на странице "поортфолио":
+    let filterHeads = $('.new-filters__filter-head');
+
+    filterHeads.on('click', function() {
+        let filter = $(this).closest('.new-filters__filter');
+
+        if (filter.hasClass('new-filters__filter--open')) {
+            filter.removeClass('new-filters__filter--open');
+        } else {
+            filter.addClass('new-filters__filter--open');
+        }
+    });
+
+    //выбор и отмена выбора опций в фильтроах на странице "поортфолио":
+    let optionResetBtns = $('.new-filters__option-label-reset'),
+        optionLabels = $('.new-filters__option-label');
+
+    optionResetBtns.on('click', function() {
+        let optionCheckbox = $(this).closest('.new-filters__option').find('input[type="checkbox"]');
+
+        optionCheckbox.prop('checked', false);
+    });
+
+    optionLabels.on('click', function(e) {
+        let optionCheckbox = $(this).closest('.new-filters__option').find('input[type="checkbox"]');
+
+        if (optionCheckbox.prop('checked') == true) {
+            e.preventDefault();
+        }
+    });
+
+    //кастомный scrollbar в выпадающем списке опций в фильтре:
+    $('.new-filters__filter-options').overlayScrollbars({
+
+    });
 });
 
 $(window).on('load scroll', function() {

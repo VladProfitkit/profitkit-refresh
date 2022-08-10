@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/fancybox.css">
+  <link rel="stylesheet" href="./css/OverlayScrollbars.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Profitkit Refresh Portfolio</title>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -186,10 +187,213 @@
 
     <section class="portfolio">
       <div class="new-container">
-        <div class="portfolio__toggles">
-          <input type="text">
-          <input type="text">
-          <input type="text">
+        <div class="portfolio__toggles new-filters">
+          <div class="new-filters__item new-filters__filter">
+            <div class="new-filters__filter-head">
+              <span>Тематика</span>
+            </div>
+            <div class="new-filters__filter-options">
+              <div class="new-filters__options-group">
+                <p class="new-filters__options-group-heading">Популярные</p>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="1" id="theme_1"></input>
+                  <label class="new-filters__option-label" for="theme_1">
+                    <img class="new-filters__option-label-icon" src="./img/icon-filter-option-icon-1.svg" alt="Медицина">
+                    <span class="new-filters__option-label-text">Медицина</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="2" id="theme_2"></input>
+                  <label class="new-filters__option-label" for="theme_2">
+                    <img class="new-filters__option-label-icon" src="./img/icon-filter-option-icon-2.svg" alt="Одежда">
+                    <span class="new-filters__option-label-text">Одежда</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="3" id="theme_3"></input>
+                  <label class="new-filters__option-label" for="theme_3">
+                    <img class="new-filters__option-label-icon" src="./img/icon-filter-option-icon-3.svg" alt="Производство">
+                    <span class="new-filters__option-label-text">Производство</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="4" id="theme_4"></input>
+                  <label class="new-filters__option-label" for="theme_4">
+                    <img class="new-filters__option-label-icon" src="./img/icon-filter-option-icon-4.svg" alt="Недвижимость">
+                    <span class="new-filters__option-label-text">Недвижимость</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+              </div>
+
+              <div class="new-filters__options-group">
+                <p class="new-filters__options-group-heading">Все</p>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="5" id="theme_5"></input>
+                  <label class="new-filters__option-label" for="theme_5">
+                    <span class="new-filters__option-label-text">Event-агентство</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="6" id="theme_6"></input>
+                  <label class="new-filters__option-label" for="theme_6">
+                    <span class="new-filters__option-label-text">IT</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="7" id="theme_7"></input>
+                  <label class="new-filters__option-label" for="theme_7">
+                    <span class="new-filters__option-label-text">Аренда авто</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="8" id="theme_8"></input>
+                  <label class="new-filters__option-label" for="theme_8">
+                    <span class="new-filters__option-label-text">Бронирование жилья</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="9" id="theme_9"></input>
+                  <label class="new-filters__option-label" for="theme_9">
+                    <span class="new-filters__option-label-text">Еда</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="10" id="theme_10"></input>
+                  <label class="new-filters__option-label" for="theme_10">
+                    <span class="new-filters__option-label-text">Мебель</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="11" id="theme_11"></input>
+                  <label class="new-filters__option-label" for="theme_11">
+                    <span class="new-filters__option-label-text">Музыкальные инструменты</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="12" id="theme_12"></input>
+                  <label class="new-filters__option-label" for="theme_12">
+                    <span class="new-filters__option-label-text">Оборудование</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="13" id="theme_13"></input>
+                  <label class="new-filters__option-label" for="theme_13">
+                    <span class="new-filters__option-label-text">Образование</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="14" id="theme_14"></input>
+                  <label class="new-filters__option-label" for="theme_14">
+                    <span class="new-filters__option-label-text">Общественная организация</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="15" id="theme_15"></input>
+                  <label class="new-filters__option-label" for="theme_15">
+                    <span class="new-filters__option-label-text">Отдых</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="16" id="theme_16"></input>
+                  <label class="new-filters__option-label" for="theme_16">
+                    <span class="new-filters__option-label-text">Спорт</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="17" id="theme_17"></input>
+                  <label class="new-filters__option-label" for="theme_17">
+                    <span class="new-filters__option-label-text">Строительная техника</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="18" id="theme_18"></input>
+                  <label class="new-filters__option-label" for="theme_18">
+                    <span class="new-filters__option-label-text">Строительство</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="19" id="theme_19"></input>
+                  <label class="new-filters__option-label" for="theme_19">
+                    <span class="new-filters__option-label-text">Управляющая компания</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="20" id="theme_20"></input>
+                  <label class="new-filters__option-label" for="theme_20">
+                    <span class="new-filters__option-label-text">Химическая продукция</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="21" id="theme_21"></input>
+                  <label class="new-filters__option-label" for="theme_21">
+                    <span class="new-filters__option-label-text">Экспертиза</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="theme" value="22" id="theme_22"></input>
+                  <label class="new-filters__option-label" for="theme_22">
+                    <span class="new-filters__option-label-text">Ювелирная продукция</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="new-filters__item new-filters__filter">
+
+          </div>
+          <div class="new-filters__item new-filters__filter">
+
+          </div>
+          <button class="new-filters__item new-filters__reset">
+            <span>Сбросить</span>
+            <svg class="new-filters__reset-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
         </div>
 
         <div class="portfolio__items">
@@ -354,6 +558,28 @@
                 <span class="portfolio__item-tag">Реклама</span>
               </div>
             </div>
+          </a>
+        </div>
+
+        <div class="portfolio__navigation new-navigation">
+          <a class="new-navigation__arrow new-navigation__arrow--prev new-navigation__arrow--disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM16 9H0.999999V7H16V9Z" fill="#000000"/>
+            </svg>
+          </a>
+
+          <div class="new-navigation__digits">
+            <a class="new-navigation__digits-item new-navigation__btn new-navigation__btn--active">1</a>
+            <a class="new-navigation__digits-item new-navigation__btn" href="#">2</a>
+            <a class="new-navigation__digits-item new-navigation__btn" href="#">3</a>
+            <span class="new-navigation__digits-item new-navigation__ellipsis">...</span>
+            <a class="new-navigation__digits-item new-navigation__btn" href="#">9</a>
+          </div>
+
+          <a class="new-navigation__arrow new-navigation__arrow--next" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="#000000"/>
+            </svg>
           </a>
         </div>
       </div>
@@ -615,6 +841,7 @@
   <script src="./js/slick.min.js"></script>
   <script src="./js/readmore.min.js"></script>
   <script src="./js/fancybox.umd.js"></script>
+  <script src="./js/jquery.overlayScrollbars.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
