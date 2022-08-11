@@ -188,7 +188,7 @@
     <section class="portfolio">
       <div class="new-container">
         <div class="portfolio__toggles new-filters">
-          <div class="new-filters__item new-filters__filter">
+          <div class="new-filters__item new-filters__filter" data-filter="theme">
             <div class="new-filters__filter-head">
               <span>Тематика</span>
             </div>
@@ -382,13 +382,103 @@
               </div>
             </div>
           </div>
-          <div class="new-filters__item new-filters__filter">
+          <div class="new-filters__item new-filters__filter" data-filter="type">
+            <div class="new-filters__filter-head">
+              <span>Тип сайта</span>
+            </div>
+            <div class="new-filters__filter-options">
+              <div class="new-filters__options-group">
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="type" value="1" id="type_1"></input>
+                  <label class="new-filters__option-label" for="type_1">
+                    <span class="new-filters__option-label-text">Интернет-магазин</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
 
-          </div>
-          <div class="new-filters__item new-filters__filter">
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="type" value="2" id="type_2"></input>
+                  <label class="new-filters__option-label" for="type_2">
+                    <span class="new-filters__option-label-text">Корпоративный сайт</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
 
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="type" value="3" id="type_3"></input>
+                  <label class="new-filters__option-label" for="type_3">
+                    <span class="new-filters__option-label-text">Посадочная страница</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="type" value="4" id="type_4"></input>
+                  <label class="new-filters__option-label" for="type_4">
+                    <span class="new-filters__option-label-text">Промо-сайт</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="type" value="5" id="type_5"></input>
+                  <label class="new-filters__option-label" for="type_5">
+                    <span class="new-filters__option-label-text">Сервис</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-          <button class="new-filters__item new-filters__reset">
+          <div class="new-filters__item new-filters__filter" data-filter="service">
+            <div class="new-filters__filter-head">
+              <span>Услуги</span>
+            </div>
+            <div class="new-filters__filter-options">
+              <div class="new-filters__options-group">
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="services" value="1" id="services_1"></input>
+                  <label class="new-filters__option-label" for="services_1">
+                    <span class="new-filters__option-label-text">Разработка</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="services" value="2" id="services_2"></input>
+                  <label class="new-filters__option-label" for="services_2">
+                    <span class="new-filters__option-label-text">Продвижение</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="services" value="3" id="services_3"></input>
+                  <label class="new-filters__option-label" for="services_3">
+                    <span class="new-filters__option-label-text">Маркетинг</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="services" value="4" id="services_4"></input>
+                  <label class="new-filters__option-label" for="services_4">
+                    <span class="new-filters__option-label-text">Интеграция CRM</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+
+                <div class="new-filters__option">
+                  <input class="visually-hidden-input new-filters__option-checkbox" type="checkbox" name="services" value="5" id="services_5"></input>
+                  <label class="new-filters__option-label" for="services_5">
+                    <span class="new-filters__option-label-text">Поддержка</span>
+                    <button class="new-filters__option-label-reset"></button>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="new-filters__item new-filters__reset" style="display: none;">
             <span>Сбросить</span>
             <svg class="new-filters__reset-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 1L1 11M1 1L11 11" stroke="#8D8D8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

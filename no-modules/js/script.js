@@ -279,7 +279,8 @@ $(document).ready(function() {
     }
 
     //раскрытие фильтров на странице "поортфолио":
-    let filterHeads = $('.new-filters__filter-head');
+    let filterHeads = $('.new-filters__filter-head'),
+        filters = $('.new-filters__filter');
 
     filterHeads.on('click', function() {
         let filter = $(this).closest('.new-filters__filter');
@@ -291,6 +292,18 @@ $(document).ready(function() {
         }
     });
 
+    filters.each(function() {
+        let filter = $(this);
+
+        body.on('mousedown', function(e) {
+            if (filter.hasClass('new-filters__filter--open')) {
+                if (!filter.is(e.target) && filter.has(e.target).length === 0) {
+                    filter.removeClass('new-filters__filter--open');
+                }
+            }
+        });
+    });
+
     //выбор и отмена выбора опций в фильтроах на странице "поортфолио":
     let optionResetBtns = $('.new-filters__option-label-reset'),
         optionLabels = $('.new-filters__option-label');
@@ -299,6 +312,8 @@ $(document).ready(function() {
         let optionCheckbox = $(this).closest('.new-filters__option').find('input[type="checkbox"]');
 
         optionCheckbox.prop('checked', false);
+
+        renewFilterSelection($(this));
     });
 
     optionLabels.on('click', function(e) {
@@ -310,7 +325,66 @@ $(document).ready(function() {
     });
 
     //кастомный scrollbar в выпадающем списке опций в фильтре:
-    $('.new-filters__filter-options').overlayScrollbars({
+    $('.new-filters__filter-options').overlayScrollbars({});
+
+    //отметка фильтра с выбранными/снятыми значениями в портфолио:
+    let filterCheckboxes = $('.new-filters__option-checkbox'),
+        filtersResetBtn = $('.new-filters__reset'),
+        allFilters = $('.new-filters'),
+        allFilterCheckboxes = allFilters.find('.new-filters__option-checkbox');
+
+    const renewFilterSelection = function(element) {
+        // debugger
+        let filterBlock = element.closest('.new-filters__filter'),
+            thisFilterCheckboxes = filterBlock.find('.new-filters__option-checkbox'),
+            selected = false;
+
+        thisFilterCheckboxes.each(function() {
+            // debugger
+            if ($(this).is(':checked')) {
+                selected = true;
+            }
+        });
+
+        if (selected == true) {
+            filterBlock.addClass('new-filters__filter--selected');
+        } else {
+            filterBlock.removeClass('new-filters__filter--selected');
+        }
+
+        ifResetBtnNeedsToBeSeen();
+    }
+
+    const ifResetBtnNeedsToBeSeen = function() {
+        let somethingIsChecked = false;
+
+        allFilterCheckboxes.each(function() {
+            if ($(this).is(':checked')) {
+                somethingIsChecked = true;
+            }
+        });
+
+        if (somethingIsChecked) {
+            filtersResetBtn.show();
+        } else {
+            filtersResetBtn.hide();
+        }
+    }
+
+    filterCheckboxes.on('change', function() {
+        renewFilterSelection($(this));
+    });
+
+    filterHeads.each(function () {
+        renewFilterSelection($(this));
+    });
+
+    //сброс фильтов в портфолио по кнопке reset:
+    filtersResetBtn.on('click', function(e) {
+        e.preventDefault();
+        allFilterCheckboxes.prop('checked', false);
+        filters.removeClass('new-filters__filter--selected');
+        $(this).hide();
 
     });
 });
