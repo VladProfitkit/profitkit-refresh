@@ -314,22 +314,16 @@ $(document).ready(function() {
     });
 
     //выбор и отмена выбора опций в фильтроах на странице "портфолио":
-    let optionResetBtns = $('.new-filters__option-label-reset'),
-        optionLabels = $('.new-filters__option-label');
-
-    optionResetBtns.on('click', function() {
-        let optionCheckbox = $(this).closest('.new-filters__option').find('input[type="checkbox"]');
-
-        optionCheckbox.prop('checked', false);
-
-        renewFilterSelection($(this));
-    });
+    let optionLabels = $('.new-filters__option-label');
 
     optionLabels.on('click', function(e) {
-        let optionCheckbox = $(this).closest('.new-filters__option').find('input[type="checkbox"]');
+        let optionCheckbox = $(this).closest('.new-filters__option').find('input[type="checkbox"]'),
+            removeSelectionBtn = $(this).find('.new-filters__option-label-reset');
 
         if (optionCheckbox.prop('checked') == true) {
-            e.preventDefault();
+            if (!removeSelectionBtn.is(e.target) && removeSelectionBtn.has(e.target).length === 0) {
+                e.preventDefault();
+            }
         }
     });
 
