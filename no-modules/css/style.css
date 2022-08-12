@@ -4821,6 +4821,56 @@ p {
   .portfolio__item:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  .new-filters__filter--open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    z-index: 100;
+  }
+
+  .new-filters__filter--open .new-filters__filter-head {
+    height: auto;
+    flex-shrink: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  .new-filters__filter--open .new-filters__filter-head span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .new-filters__filter--open .os-padding {
+    top: 82px;
+    height: calc(100% - 82px) !important;
+  }
+
+  .new-filters__filter--open .os-scrollbar-vertical {
+    top: 82px !important;
+  }
+
+  .new-filters__filter--open .new-filters__filter-head::after {
+    top: 25px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-new-modal-close.svg");
+  }
+
+  .new-filters__filter--open .new-filters__filter-options {
+    position: static;
+    max-height: none;
+    border: none;
+  }
 }
 
 @media (max-width: 359px) {

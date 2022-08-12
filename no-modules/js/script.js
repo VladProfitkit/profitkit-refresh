@@ -287,8 +287,14 @@ $(document).ready(function() {
 
         if (filter.hasClass('new-filters__filter--open')) {
             filter.removeClass('new-filters__filter--open');
+            if ($(window).width() <= 575) {
+                body.removeClass('modal-open');
+            }
         } else {
             filter.addClass('new-filters__filter--open');
+            if ($(window).width() <= 575) {
+                body.addClass('modal-open');
+            }
         }
     });
 
@@ -299,12 +305,15 @@ $(document).ready(function() {
             if (filter.hasClass('new-filters__filter--open')) {
                 if (!filter.is(e.target) && filter.has(e.target).length === 0) {
                     filter.removeClass('new-filters__filter--open');
+                    if ($(window).width() <= 575) {
+                        body.removeClass('modal-open');
+                    }
                 }
             }
         });
     });
 
-    //выбор и отмена выбора опций в фильтроах на странице "поортфолио":
+    //выбор и отмена выбора опций в фильтроах на странице "портфолио":
     let optionResetBtns = $('.new-filters__option-label-reset'),
         optionLabels = $('.new-filters__option-label');
 
@@ -334,13 +343,11 @@ $(document).ready(function() {
         allFilterCheckboxes = allFilters.find('.new-filters__option-checkbox');
 
     const renewFilterSelection = function(element) {
-        // debugger
         let filterBlock = element.closest('.new-filters__filter'),
             thisFilterCheckboxes = filterBlock.find('.new-filters__option-checkbox'),
             selected = false;
 
         thisFilterCheckboxes.each(function() {
-            // debugger
             if ($(this).is(':checked')) {
                 selected = true;
             }
