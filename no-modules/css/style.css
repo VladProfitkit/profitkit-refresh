@@ -552,7 +552,22 @@ p {
 
 .refresh-header__menu-link--parent:hover + .refresh-header__submenu,
 .refresh-header__menu-link--parent:focus + .refresh-header__submenu,
-.refresh-header__submenu:hover,
+.refresh-header__submenu:hover {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: -35px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin: 0;
+  padding: 15px 20px;
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0,0,0,.2);
+  border-radius: 10px;
+  list-style: none;
+  z-index: 20;
+}
+
 .refresh-header__submenu:focus-within {
   position: absolute;
   top: calc(100% + 16px);
@@ -566,6 +581,7 @@ p {
   box-shadow: 0 4px 30px rgba(0,0,0,.2);
   border-radius: 10px;
   list-style: none;
+  z-index: 20;
 }
 
 .refresh-header__submenu::before {
